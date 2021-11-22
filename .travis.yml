@@ -3,6 +3,7 @@ node_js:
   - node
 before_script:
   - cd COMP.SE.200-2021-2022-1
+  - npm install
 
 script:
   - npm -v
