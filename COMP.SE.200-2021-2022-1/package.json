@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "jest": "jest",
     "test": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "jest": {
