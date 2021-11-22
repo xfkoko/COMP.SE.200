@@ -1,7 +1,10 @@
 language: node_js
 before_script:
   - cd COMP.SE.200-2021-2022-1
+  - npm install -g npm stable
+  - npm install -g node
+  -
 
 script:
   - npm -v
-  - node -v
+  - node --version
