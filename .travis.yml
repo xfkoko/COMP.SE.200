@@ -1,6 +1,7 @@
 language: node_js
 before_script:
   - cd COMP.SE.200-2021-2022-1
-  - npm install --build-from-source
+
 script:
-  - npm test
+  - npm -v
+  - node -v
