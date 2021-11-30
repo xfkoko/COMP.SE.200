@@ -12,7 +12,6 @@ describe("get-function tests", () => {
     test("Test that returns default value when value is undefined", () => {
         const defaultValue = 'default';
         const result = get(testobject, 'a[2]', defaultValue);
-        console.log(result);
         expect(result).toBe(defaultValue);
     });
 

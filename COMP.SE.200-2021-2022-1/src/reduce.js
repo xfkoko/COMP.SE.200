@@ -39,33 +39,7 @@ import _ from "lodash"
 function reduce(collection, iteratee, accumulator) {
   const func = Array.isArray(collection) ? arrayReduce : baseReduce
   const initAccum = arguments.length < 3
-  //console.log(arguments.length)
-  //console.log(initAccum)
   return func(collection, iteratee, accumulator, initAccum, baseEach)
 }
 
 export default reduce
-//console.log(_.includes)
-//console.log(reduce({ 'a': 1, 'b': 2, 'a': 1 }, (a) => _.defaults(a), {}))
-
-/*console.log(reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key) => {
-     (result[value] || (result[value] = [])).push(key)
-     return result
-   }, {}))*/
-
-/*console.log(reduce({ 'a': {val: 1, color: "blue"}, 'b': {val: 2, color: "black"}, 'c': {val: 1, color: "black"}, 'd': {val: 2, color: "white"} }, (result, value, key) => {
-  if (value.val > 1 && value.color == "black") {
-    (result["wanted"] || (result["wanted"] = [])).push(key)
-    }
-    return result
-  }, {"wanted": ['p']}))*/
-
-console.log(reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key, something) => {
-  result = result + value
-  return result
-  }))
-
-/*  console.log(reduce([1,2,3,1], (result, value, key) => {
-    (result[value] || (result[value] = [])).push(key)
-    return result
-  }))*/
