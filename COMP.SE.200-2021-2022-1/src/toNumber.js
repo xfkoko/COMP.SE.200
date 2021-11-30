@@ -63,16 +63,3 @@ function toNumber(value) {
 }
 
 export default toNumber
-
-console.log(toNumber("3.3"))
-console.log(toNumber(3.3))
-console.log(toNumber(3))
-console.log(toNumber(1/3))
-console.log(toNumber("three"))
-console.log(toNumber("@"))
-console.log(toNumber("-3.1323"))
-console.log(toNumber([1]))
-console.log(toNumber([1,2]))
-console.log(toNumber({"value": 1}))
-console.log(toNumber("1."))
-console.log(toNumber("12"))
