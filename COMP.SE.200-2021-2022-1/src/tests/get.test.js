@@ -40,9 +40,14 @@ describe("get-function tests", () => {
         const result = get(testobject, 0, defaultValue)
         expect(result).toBe(defaultValue);
     })
-
+    //LISÄTTY
     test("Test that path [null] returns undefined", () => {
         const result = get(testobject, [null])
+        expect(result).toBe(undefined);
+    })
+    //LISÄTTY
+    test("Test that object [null] returns undefined", () => {
+        const result = get(null, 0)
         expect(result).toBe(undefined);
     })
 })
