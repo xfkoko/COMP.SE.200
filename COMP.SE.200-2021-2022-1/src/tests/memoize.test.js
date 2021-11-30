@@ -13,10 +13,9 @@ describe("mamoize-function tests", () => {
         const adder =  memoize(add);
         const a = adder(1,2);
         const b = adder(5,2);
-        const c = adder(1,2);
-        expect(a).toBe(3);
-        expect(b).toBe(7);
-        expect(c).toBe(a);
+        const c = adder(1,3);
+        expect(adder.cache.get(1)).toBe(3);
+        expect(adder.cache.get(5)).toBe(7);
     });
 
     // Tää on aika turha ehkä?
