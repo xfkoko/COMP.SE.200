@@ -37,11 +37,3 @@ function filter(array, predicate) {
 }
 
 export default filter
-
-const users = [
-     { 'user': 'barney', 'active': true },
-     { 'user': 'fred',   'active': false }
-   ]
-
-console.log(filter({'a': 1, 'b': 2}, ( active ) => active>0))
-console.log(filter({'a': 10}, (a) => a > 1))
