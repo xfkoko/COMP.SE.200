@@ -32,5 +32,3 @@ function every(array, predicate) {
 }
 
 export default every
-
-console.log(every([true, 1, 123123123], Boolean))
