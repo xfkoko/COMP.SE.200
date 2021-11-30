@@ -42,9 +42,10 @@ describe("filter-function tests", () => {
         expect(result).toMatchObject(expected);
     });
 
-    // Musta ehkä turha testata
-    test("Test that returns empty if given empty array", () => {
-
+    // Musta ehkä turha testata // Muokkasin hiukan, niin saadaan yksi ehto coverattua
+    test("Test that returns empty if given null as array", () => {
+        const result = filter(null, (({foo}) => foo));
+        expect(result).toMatchObject([[]])
     });
 
     test("Test that returns empty if given array is not iterable", () => {
