@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "jest": "jest",
-    "test": "jest --coverage --collectCoverageFrom=src/get.js --collectCoverageFrom=src/upperFirst.js --collectCoverageFrom=src/reduce.js --collectCoverageFrom=src/slice.js --collectCoverageFrom=src/filter.js --collectCoverageFrom=src/memoize.js --collectCoverageFrom=src/toNumber.js --collectCoverageFrom=src/words.js --collectCoverageFrom=src/every.js --collectCoverageFrom=src/ceil.js && coveralls < coverage/lcov.info"
+    "test": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "jest": {
     "transform": {

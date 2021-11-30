@@ -44,8 +44,3 @@ function slice(array, start, end) {
 }
 
 export default slice
-
-console.log(slice([1,2,3,4,5], 0, 2))
-console.log(slice([1,2,3,4,5], 2, 4))
-console.log(slice([1,2,3,4,5], 4, 6))
-console.log(slice([1,2,3,4,5], 6, 8))

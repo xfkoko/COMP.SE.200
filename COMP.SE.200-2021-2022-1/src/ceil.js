@@ -22,13 +22,3 @@ import createRound from './.internal/createRound.js'
 const ceil = createRound('ceil')
 
 export default ceil
-
-console.log(ceil(4123.006))
-console.log(ceil(4123.006, 2))
-console.log(ceil(4123.006, -2))
-console.log(ceil(4.006, 0))
-console.log(ceil(4.006, "asd"))
-console.log(ceil(4.006, true))
-console.log(ceil(4.006, 1))
-console.log(ceil(4.0006, false))
-console.log(ceil(-2211, -2))
