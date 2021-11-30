@@ -40,4 +40,9 @@ describe("get-function tests", () => {
         const result = get(testobject, 0, defaultValue)
         expect(result).toBe(defaultValue);
     })
+
+    test("Test that path [null] returns undefined", () => {
+        const result = get(testobject, [null])
+        expect(result).toBe(undefined);
+    })
 })
