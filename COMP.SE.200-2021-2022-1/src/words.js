@@ -36,5 +36,3 @@ function words(string, pattern) {
 }
 
 export default words
-
-console.log(words("böb,  alice,  josh"))

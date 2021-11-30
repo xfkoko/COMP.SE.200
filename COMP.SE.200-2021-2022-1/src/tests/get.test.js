@@ -5,7 +5,7 @@ const testobject = { 'a': [{ 'b': { 'c': 3 } }, {'d': {'e': 2}}] };
 
 describe("get-function tests", () => {
     test("Test that get-function returns correct value with valid parameters", () => {
-        const result =  get(testobject, 'a[0].b.c')
+        const result =  get(testobject, 'a[0].b.c');
         expect(result).toBe(3);
     });
     
