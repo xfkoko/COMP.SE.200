@@ -27,7 +27,7 @@ const invalidItaratee = (result, value, key) => {
     return result
 }
 
-const collection = {'a': {val: 1, color: "blue"}, 'b': {val: 2, color: "black"}, 'c': {val: 1, color: "black"}, 'd': {val: 2, color: "white"} }
+const collection = {'a': {val: 1, color: "blue"}, 'b': {val: 2, color: "black"}, 'c': {val: 1, color: "black"}, 'd': {val: 2, color: "white"}};
 
 describe("reduce-function tests", () => {
     test("Test that sorting works with categories", () => {
