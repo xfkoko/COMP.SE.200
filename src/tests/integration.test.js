@@ -54,7 +54,7 @@ describe("integration tests", () => {
     });
 
     test("Test that list of items that has been sorted with reduce by color can be further filtered \
-    with filter function so that the list returned consist of only items that fulfill both \
+    with filter function so that the list return consist of only items that fulfill both \
     requirements. Afterwards split the items to few arrays with slice so the items are easier \
     to display on multiple pages.", () => {
         const colorIteratee = categoryIteratee("black");

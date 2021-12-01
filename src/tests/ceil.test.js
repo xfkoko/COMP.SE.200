@@ -16,7 +16,6 @@ describe("ceil-function tests", () => {
         expect(result).toBe(1300);
     });
 
-    // Ei ehkä tarvita (toinen testi kattaa)
     test("Test any number and set the round up precision to be true. Expect same result as when round up precision would be 1", () => {
         const result = ceil(1.11, true);
         expect(result).toBe(1.2);

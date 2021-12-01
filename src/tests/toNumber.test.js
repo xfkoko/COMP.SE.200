@@ -23,32 +23,32 @@ describe("toNumber-function tests", () => {
         const result = toNumber("1.a");
         expect(result).toBe(NaN);
     });
-    //LISÄTTY
+
     test("Input number, expect same number as return", () => {
         const result = toNumber(1);
         expect(result).toBe(1);
     });
-    //LISÄTTY
+
     test("Input symbol, expect NaN as return", () => {
         const result = toNumber(Symbol("foo"));
         expect(result).toBe(NaN);
     });
-    //LISÄTTY
+
     test("Input function object, expect NaN as return", () => {
         const result = toNumber({a: "1"});
         expect(result).toBe(NaN);
     });
-    //LISÄTTY
+
     test("Input object, expect 0 as return", () => {
         const result = toNumber(Object(""));
         expect(result).toBe(0);
     });
-    //LISÄTTY
+
     test("Input true, expect 1 as return", () => {
         const result = toNumber(true);
         expect(result).toBe(1);
     });
-    //LISÄTTY
+
     test("Input false, expect 0 as return", () => {
         const result = toNumber(false);
         expect(result).toBe(0);

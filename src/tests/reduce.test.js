@@ -53,21 +53,6 @@ describe("reduce-function tests", () => {
         expect(result).toStrictEqual(3);
     });
 
-    /*// Testin suunnittelussa virhe. Kun "accumalator" arvoa ei anneta, funktio käyttää "collection" listan/mapin ensimmäistä arvoa lähtökohtana.
-    test("Test that TypeError is thrown when map is tried to reduce without accumulator when it should return a map", () => {
-        const valIteratee = rangeIteratee(1);
-        const result = reduce(collection, sumIteratee);
-        expect(result).toThrow(TypeError);
-    });
-    
-    // Tässä sama
-    test("Test that TypeError is thrown when array is tried to reduce without accumulator when it should return an array", () => {
-        const result = () => reduce([1, 2, 3, 1], sumIteratee);
-        expect(result).toThrow(TypeError);
-    });
-*/
-    // LISÄTTY
-    // TypeErrorin saa esim ei toimivalla iteratorilla
     test("Test that TypeError is thrown when iterator is invalid", () => {
         const result = () => reduce([1, 2, 3, 1], invalidItaratee);
         expect(result).toThrow(TypeError);
@@ -83,9 +68,4 @@ describe("reduce-function tests", () => {
         const result = reduce([1, 2], sumIteratee);
         expect(result).toStrictEqual(3);
     });
-    
-    //Tämä tulee testattua jo ekoissa testeissä
-    /*test("Test that sorting works with pre-set accumulator", () => {
-        expect(1).toBe(0);
-    });*/
 });

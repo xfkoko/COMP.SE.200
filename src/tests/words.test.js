@@ -21,18 +21,11 @@ describe("words-function tests", () => {
         expect(result).toStrictEqual([]);
     });
 
-    test("Input a faulty regex and see that the return value is an empty array", () => {
-        const result = words("Bob, Alice & James", "faulty");
-        expect(result).toStrictEqual([]);
-    });
-
-    //LISÄTTY
     test("Should throw TypeError when undefined is set as a string input", () => {
         const result = () => words(undefined);
         expect(result).toThrow(TypeError);
     });
 
-    //LISÄTTY
     test("Input ',' as a string and expect to return empty list", () => {
         const result = words(",");
         expect(result).toStrictEqual([]);
